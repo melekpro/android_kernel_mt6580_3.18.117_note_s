@@ -4,8 +4,6 @@
 
 #include "lcm_drv.h"
 
-#include <prj/prj_config.h>
-
 // ---------------------------------------------------------------------------
 //  Local Constants
 // ---------------------------------------------------------------------------
@@ -1603,7 +1601,7 @@ static unsigned int lcm_compare_id(void)
 	return (LCM_RM68200_ID == id1)?1:0;
 }
 
-LCM_DRIVER rm68200_hd720_dsi_vdo = 
+LCM_DRIVER rm68200_hd720_dsi_vdo_lcm_drv = 
 {
     .name			= "rm68200_hd720_dsi_vdo",
 	.set_util_funcs = lcm_set_util_funcs,
