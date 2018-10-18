@@ -49,7 +49,7 @@ struct LCM_setting_table {
 };
 
 static struct LCM_setting_table lcm_vdo_initialization_setting[] = {
-#if defined(RM68200_JINSHIJIE_BOE)  //JINSHIYE BOE	
+
 	{0xFE, 1,{0x01}},
 	{0x00, 1,{0x0A}},
 	{0x03, 1,{0x1A}},
@@ -347,7 +347,7 @@ static struct LCM_setting_table lcm_vdo_initialization_setting[] = {
 	{REGFLAG_END_OF_TABLE, 0x00, {}}	
 	
 
-#elif defined(RM68200_H546TAN)   //for hs006 jfwy A7    auo546
+/*
 
 
 {0xFE, 1,{0x01}},
@@ -893,8 +893,8 @@ static struct LCM_setting_table lcm_vdo_initialization_setting[] = {
 
 {REGFLAG_END_OF_TABLE, 0x00, {}}	
 	
-#else
-	
+*/
+	/*
 {0xFE, 1,{0x01}},
 
 {0x00, 1,{0x0A}},
@@ -1434,7 +1434,7 @@ static struct LCM_setting_table lcm_vdo_initialization_setting[] = {
 
 {REGFLAG_END_OF_TABLE, 0x00, {}}
 #endif
-
+*/
 };
 
 /*
